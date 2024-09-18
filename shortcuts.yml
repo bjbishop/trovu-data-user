@@ -9,12 +9,21 @@ examplekeyword 2:
   description: My custom shortcut with the keyword examplekeyword and 2 arguments.
   tags:
   - example
-myjira 1:
-    url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
-    title: My agile jira shortcut
-    description: My agile jira shortcut
-    tags:
-        - custom
-        - jira
-        - releng
+jira 1:
+  url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
+  title: My agile jira shortcut
+  description: My agile jira shortcut
+  tags:
+  - custom
+  - jira
+  - releng
         
+sharepoint 2:
+  url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
+  title: Release Engineering Sharepoint
+  description: Search documentation within the Release Engineering Sharepoint site
+  tags:
+  - custom
+  - sharepoint
+  - releng
+  
