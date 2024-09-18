@@ -9,3 +9,4 @@ examplekeyword 2:
   description: My custom shortcut with the keyword examplekeyword and 2 arguments.
   tags:
   - example
+myjira 3: https://agile-jira.pearson.com/secure/QuickSearch.jspa?searchString=<query>
