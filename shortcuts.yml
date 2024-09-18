@@ -9,10 +9,20 @@ examplekeyword 2:
   description: My custom shortcut with the keyword examplekeyword and 2 arguments.
   tags:
   - example
+  
 jira 1:
   url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
-  title: My agile jira shortcut
-  description: My agile jira shortcut
+  title: JIRA keyword search
+  description: Search a keyword within the RELENG project in agile-JIRA
+  tags:
+  - custom
+  - jira
+  - releng
+  
+ticket 1:
+  url: https://agile-jira.pearson.com/browse/<query>
+  title: JIRA ticket search
+  description: Search a specific ticket within agile-JIRA
   tags:
   - custom
   - jira
@@ -26,6 +36,7 @@ sharepoint 1:
   - custom
   - sharepoint
   - releng
+  
 gilligan 1:
   url: https://gilligan.pearsondev.com/search?search=<query>
   title: Search Gilligan
@@ -35,4 +46,21 @@ gilligan 1:
   - gilligan
   - gitlab
   - releng
-  
+
+snow 1:
+  url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
+  title: Search servicenow
+  description: Search Servicenow for keywords
+  tags:
+  - custom
+  - servicenow
+  - releng
+
+hub 1:
+  url: https://hub.pearson.com/search-center?search=<query>
+  title: Pearson Hub
+  description: Search keywords within Pearson's hub
+  tags:
+  - custom
+  - hub
+  - releng
