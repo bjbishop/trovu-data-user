@@ -74,3 +74,12 @@ ecr 1:
   - dockerhub
   - amazon
   - ecr
+
+mydocs 0:
+  url: https://gitlab.com/pearsontechnology/IO/pearson-io-releng/troubleshooting-docs/-/blob/main/docs/collapsable_doc_index.md
+  title: Internal documentation
+  description: Our collapsable internal documentation site
+  tags:
+  - docs
+  - releng
+  
