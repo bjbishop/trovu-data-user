@@ -64,3 +64,13 @@ hub 1:
   - custom
   - hub
   - releng
+  
+ecr 1:
+  url: https://gallery.ecr.aws/search?searchTerm=<query>
+  title: Public ECR gallery
+  description: Search keywords in Amazon's ECR public gallery
+  tags:
+  - docker
+  - dockerhub
+  - amazon
+  - ecr
