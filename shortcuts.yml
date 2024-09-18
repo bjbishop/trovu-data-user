@@ -26,4 +26,13 @@ sharepoint 1:
   - custom
   - sharepoint
   - releng
+gilligan 1:
+  url: https://gilligan.pearsondev.com/search?search=<query>
+  title: Search Gilligan
+  description: Search gilligan.pearsondev.com our internal gitlab instance
+  tags:
+  - custom
+  - gilligan
+  - gitlab
+  - releng
   
