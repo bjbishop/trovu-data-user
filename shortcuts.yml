@@ -10,11 +10,11 @@ examplekeyword 2:
   tags:
   - example
 myjira 1:
-    url: https://agile-jira.pearson.com/secure/QuickSearch.jspa?searchString=<query>
+    url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
     title: My agile jira shortcut
     description: My agile jira shortcut
     tags:
-        - example
         - custom
         - jira
+        - releng
         
