@@ -1,15 +1,6 @@
 # Documentation:
 # https://trovu.net/docs/shortcuts/
 
-examplekeyword 0: http://www.example.com/
-examplekeyword 1: http://www.example.com/?q=<query>
-examplekeyword 2:
-  url: http://www.example.com/?q=<query>&p=<puery>
-  title: Custom shortcut
-  description: My custom shortcut with the keyword examplekeyword and 2 arguments.
-  tags:
-  - example
-  
 jira 1:
   url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
   title: JIRA keyword search
@@ -18,7 +9,7 @@ jira 1:
   - custom
   - jira
   - releng
-  
+
 ticket 1:
   url: https://agile-jira.pearson.com/browse/<query>
   title: JIRA ticket search
@@ -27,7 +18,7 @@ ticket 1:
   - custom
   - jira
   - releng
-        
+
 sharepoint 1:
   url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
   title: Release Engineering Sharepoint
@@ -36,7 +27,7 @@ sharepoint 1:
   - custom
   - sharepoint
   - releng
-  
+
 gilligan 1:
   url: https://gilligan.pearsondev.com/search?search=<query>
   title: Search Gilligan
@@ -64,7 +55,7 @@ hub 1:
   - custom
   - hub
   - releng
-  
+
 ecr 1:
   url: https://gallery.ecr.aws/search?searchTerm=<query>
   title: Public ECR gallery
@@ -93,4 +84,3 @@ pd 1:
   - pagerduty
   - releng
   - custom
-  
