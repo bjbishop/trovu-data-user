@@ -3,7 +3,7 @@
 
 
 jira 1:
-  url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22RELENG-<query>%22%20ORDER%20BY%20created%20DESC
+  url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
   title: JIRA keyword search
   description: Search a keyword within the RELENG project in agile-JIRA
   tags:
@@ -12,7 +12,7 @@ jira 1:
   - releng
 
 ticket 1:
-  url: https://agile-jira.pearson.com/browse/<query>
+  url: https://agile-jira.pearson.com/browse/RELENG-<query>
   title: JIRA ticket search
   description: Search a specific ticket within agile-JIRA
   tags:
