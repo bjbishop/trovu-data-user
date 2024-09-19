@@ -3,7 +3,7 @@
 
 
 jira 1:
-  url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
+  url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22RELENG-<query>%22%20ORDER%20BY%20created%20DESC
   title: JIRA keyword search
   description: Search a keyword within the RELENG project in agile-JIRA
   tags:
@@ -83,5 +83,14 @@ pd 1:
   description: Search keywords within Pearson AI PagerDuty incidents
   tags:
   - pagerduty
+  - releng
+  - custom
+
+splunk 1:
+  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
+  title: Pearson AI Splunk
+  description: Search keywords within Pearson AI splunk and the index of app_releng
+  tags:
+  - splunk
   - releng
   - custom
