@@ -94,3 +94,43 @@ splunk 1:
   - splunk
   - releng
   - custom
+
+awsec2 1:
+  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=<query>
+  title: AWS Console EC2 instance search
+  description: Search for an instance ID within the AWS Console (with currently logged in console session)
+  tags:
+  - releng
+  - custom
+  - aws
+  - ec2
+
+awsssm 1:
+  url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>?region=us-east-1#:
+  title: AWS Console SSM connection
+  description: Connect to an EC2 instance using ssm within the AWS Console
+  tags:
+  - releng
+  - custom
+  - aws
+  - ec2
+  - ssm
+
+awssh 0:
+  url: https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#
+  title: AWS Console cloud shell
+  description: Connect the cloud shell terminal within the AWS Console
+  tags:
+  - releng
+  - custom
+  - aws
+
+awsdocs 1:
+  url: https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=<query>
+  title: AWS documentation
+  description: Search keywords within the AWS documentation site
+  tags:
+  - releng
+  - custom
+  - aws
+  - docs
