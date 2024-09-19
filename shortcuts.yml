@@ -106,7 +106,7 @@ awsec2 1:
   - ec2
 
 awsssm 1:
-  url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>?region=us-east-1#:
+  url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
   title: AWS Console SSM connection
   description: Connect to an EC2 instance using ssm within the AWS Console
   tags:
@@ -117,7 +117,7 @@ awsssm 1:
   - ssm
 
 awssh 0:
-  url: https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#
+  url: https://us-east-1.console.aws.amazon.com/cloudshell/home
   title: AWS Console cloud shell
   description: Connect the cloud shell terminal within the AWS Console
   tags:
