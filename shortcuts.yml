@@ -5,6 +5,9 @@ jira 1:
   url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
   title: JIRA keyword search
   description: Search a keyword within the RELENG project in agile-JIRA
+  examples:
+    - arguments: project ideas
+      description: Search for "project ideas" within the RELENG project of agile-jira.pearson.com
   tags:
     - custom
     - jira
@@ -14,6 +17,9 @@ ticket 1:
   url: https://agile-jira.pearson.com/browse/RELENG-<query>
   title: JIRA ticket search
   description: Search a specific ticket within agile-JIRA
+  examples:
+    - arguments: 1234
+      description: Search for RELENG-1234 on the RELENG project of agile-jira.pearson.com
   tags:
     - custom
     - jira
@@ -23,6 +29,9 @@ sharepoint 1:
   url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
   title: Release Engineering Sharepoint
   description: Search documentation within the Release Engineering Sharepoint site
+  examples:
+    - arguments: stuff
+      description: Search for "stuff" on the Release Engineering's Sharepoint site
   tags:
     - custom
     - sharepoint
@@ -32,6 +41,9 @@ gilligan 1:
   url: https://gilligan.pearsondev.com/search?search=<query>
   title: Search Gilligan
   description: Search gilligan.pearsondev.com our internal gitlab instance
+  examples:
+    - arguments: repository name
+      description: Search for "repository name" on gilligan.pearsondev.com
   tags:
     - custom
     - gilligan
@@ -41,7 +53,10 @@ gilligan 1:
 snow 1:
   url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
   title: Search servicenow
-  description: Search Servicenow for keywords
+  description: Search for keywords on Pearson's Servicenow
+  examples:
+    - arguments: keyword
+      description: Search for "keyword" on pearsonnow.service-now.com
   tags:
     - custom
     - servicenow
@@ -51,6 +66,9 @@ hub 1:
   url: https://hub.pearson.com/search-center?search=<query>
   title: Pearson Hub
   description: Search keywords within Pearson's hub
+  examples:
+    - arguments: document name
+      description: Search for "document name" on hub.pearson.com
   tags:
     - custom
     - hub
@@ -60,6 +78,9 @@ ecr 1:
   url: https://gallery.ecr.aws/search?searchTerm=<query>
   title: Public ECR gallery
   description: Search keywords in Amazon's ECR public gallery
+  examples:
+    - arguments: maven
+      description: Search for "maven" on AWS Public ECR gallery
   tags:
     - docker
     - dockerhub
@@ -80,15 +101,38 @@ pd 1:
   url: https://pearsonai.pagerduty.com/search/?searchString=<query>&searchType%5B%5D=incident&sortBy=relevance&team%5B%5D=P0FY9Z3
   title: Pearson AI PagerDuty
   description: Search keywords within Pearson AI PagerDuty incidents
+  examples:
+    - arguments: outage
+      description: Search incidents on PagerDuty for "outage"
   tags:
     - pagerduty
     - releng
     - custom
 
+splunk 0:
+  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng
+  title: Pearson AI Splunk
+  description: Open Pearson AI Splunk
+
 splunk 1:
   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
   title: Pearson AI Splunk
-  description: Search keywords within Pearson AI splunk and the index of app_releng
+  description: Search keywords within Pearson AI Splunk
+  Examples:
+    - arguments: FATAL
+      description: Search Splunk for messages containing "FATAL"
+  tags:
+    - splunk
+    - releng
+    - custom
+
+splunk 2:
+  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now&sid=1726795693.5048267
+  title: Controller specific Splunk search
+  description: Search "controller" for "message" in Pearson AI Splunk
+  examples:
+    - arguments: farnsworth, FATAL
+      description: Search Splunk within the host="farnsworth" for messages containing "FATAL"
   tags:
     - splunk
     - releng
