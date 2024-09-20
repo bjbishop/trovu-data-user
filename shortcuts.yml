@@ -106,14 +106,22 @@ splunk 1:
       description: Search Splunk for messages containing "FATAL"
 
 splunk 2:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now&sid=1726795693.5048267
+  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now
   title: Controller specific Splunk search
-  description: Search "controller" for "message" in Pearson AI Splunk
+  description: Search "controller" since 30 minutes ago for "message" in Pearson AI Splunk
   include: splunk 0
   examples:
     - arguments: farnsworth, FATAL
-      description: Search Splunk within the host="farnsworth" for messages containing "FATAL"
+      description: Search Splunk within the host="farnsworth" since 30 minutes ago for messages containing "FATAL"
 
+splunk 3:
+  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-<param3>%40m&latest=now
+  title: Controller specific Splunk search with timerange
+  description: Search "controller" since "timerange" for "message" in Pearson AI Splunk
+  include: splunk 0
+  examples:
+    - arguments: farnsworth, 42, FATAL
+      description: Search Splunk within the host="farnsworth" since 42 minutes ago for messages containing "FATAL"
 
 awsec2 0:
   url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
@@ -125,10 +133,13 @@ awsec2 0:
     - amazon
 
 awsec2 1:
-  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=<query>
+  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:instanceState=running;search=:<query>;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false
   title: AWS Console EC2 instance search
-  description: Search for an instance ID within the AWS Console (with currently logged in console session)
+  description: Search for a keyword within the AWS Console (with currently logged in console session)
   include: awsec2 0
+  examples:
+    - arguments: testbox
+      description: Search the AWS EC2 console for "testbox"
 
 awsssm 1:
   url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
