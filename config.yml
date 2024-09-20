@@ -7,6 +7,8 @@ namespaces:
   - .us
   - github: .
     name: my
+  - github: jira
+    name: my
 defaultKeyword: g
 language: en
 country: us
