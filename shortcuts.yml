@@ -166,3 +166,14 @@ awsdocs 1:
     - aws
     - ec2
     - amazon
+
+shchk 1:
+  url: https://www.shellcheck.net/wiki/<query>
+  title: Shellcheck lookup
+  description: Search for a shellcheck code
+  tags:
+    - bash
+    - shell
+  examples:
+    - arguments: SC1000
+      description: Search for "SC1000" in the Shellcheck wiki
