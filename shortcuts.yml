@@ -1,8 +1,6 @@
 ---
-# Documentation:
-# https://trovu.net/docs/shortcuts/
 jira 1:
-  url: https://agile-jira.pearson.com/browse/RELENG-5245?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
+  url: https://agile-jira.pearson.com/browse/RELENG-0?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
   title: JIRA keyword search
   description: Search a keyword within the RELENG project in agile-JIRA
   examples:
@@ -17,13 +15,10 @@ ticket 1:
   url: https://agile-jira.pearson.com/browse/RELENG-<query>
   title: JIRA ticket search
   description: Search a specific ticket within agile-JIRA
+  include: jira 1
   examples:
     - arguments: 1234
       description: Search for RELENG-1234 on the RELENG project of agile-jira.pearson.com
-  tags:
-    - custom
-    - jira
-    - releng
 
 sharepoint 1:
   url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
@@ -113,30 +108,28 @@ splunk 0:
   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng
   title: Pearson AI Splunk
   description: Open Pearson AI Splunk
+  tags:
+    - splunk
+    - releng
+    - custom
 
 splunk 1:
   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
   title: Pearson AI Splunk
   description: Search keywords within Pearson AI Splunk
+  include: splunk 0
   Examples:
     - arguments: FATAL
       description: Search Splunk for messages containing "FATAL"
-  tags:
-    - splunk
-    - releng
-    - custom
 
 splunk 2:
   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now&sid=1726795693.5048267
   title: Controller specific Splunk search
   description: Search "controller" for "message" in Pearson AI Splunk
+  include: splunk 0
   examples:
     - arguments: farnsworth, FATAL
       description: Search Splunk within the host="farnsworth" for messages containing "FATAL"
-  tags:
-    - splunk
-    - releng
-    - custom
 
 awsec2 1:
   url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=<query>
@@ -153,31 +146,20 @@ awsssm 1:
   url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
   title: AWS Console SSM connection
   description: Connect to an EC2 instance using ssm within the AWS Console
+  include: awsec2 1
   tags:
-    - releng
-    - custom
-    - aws
-    - ec2
     - ssm
-    - amazon
 
 awssh 0:
   url: https://us-east-1.console.aws.amazon.com/cloudshell/home
   title: AWS Console cloud shell
   description: Connect the cloud shell terminal within the AWS Console
-  tags:
-    - releng
-    - custom
-    - aws
-    - amazon
+  include: awsec2 1
 
 awsdocs 1:
   url: https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=<query>
   title: AWS documentation
   description: Search keywords within the AWS documentation site
+  include: awsec2 1
   tags:
-    - releng
-    - custom
-    - aws
     - docs
-    - amazon
