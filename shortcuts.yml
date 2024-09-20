@@ -167,6 +167,18 @@ awsdocs 1:
     - ec2
     - amazon
 
+trail 1:
+  url: https://us-east-1.console.aws.amazon.com/cloudtrailv2/home?region=us-east-1#/events?ResourceName=<query>
+  title: AWS Cloudtrail events
+  description: Search for a resource in AWS Cloudtrail events
+  tags:
+    - aws
+    - amazon
+  examples:
+    - arguments: i-1234567
+      description: Search for "i-1234567" in AWS Cloudtrail events
+
+
 shchk 1:
   url: https://www.shellcheck.net/wiki/<query>
   title: Shellcheck lookup
