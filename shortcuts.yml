@@ -101,7 +101,7 @@ splunk 1:
   title: Pearson AI Splunk
   description: Search keywords within Pearson AI Splunk
   include: splunk 0
-  Examples:
+  examples:
     - arguments: FATAL
       description: Search Splunk for messages containing "FATAL"
 
