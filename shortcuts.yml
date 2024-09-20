@@ -114,14 +114,21 @@ splunk 2:
     - arguments: farnsworth, FATAL
       description: Search Splunk within the host="farnsworth" for messages containing "FATAL"
 
-awsec2 1:
-  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=<query>
-  title: AWS Console EC2 instance search
-  description: Search for an instance ID within the AWS Console (with currently logged in console session)
+
+awsec2 0:
+  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
+  title: AWS Console EC2
+  description: Open the AWS Console (with currently logged in console session)
   tags:
     - aws
     - ec2
     - amazon
+
+awsec2 1:
+  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#InstanceDetails:instanceId=<query>
+  title: AWS Console EC2 instance search
+  description: Search for an instance ID within the AWS Console (with currently logged in console session)
+  include: awsec2 0
 
 awsssm 1:
   url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
