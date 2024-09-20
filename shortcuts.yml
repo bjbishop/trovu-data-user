@@ -7,9 +7,7 @@ jira 1:
     - arguments: project ideas
       description: Search for "project ideas" within the RELENG project of agile-jira.pearson.com
   tags:
-    - custom
     - jira
-    - releng
 
 ticket 1:
   url: https://agile-jira.pearson.com/browse/RELENG-<query>
@@ -28,9 +26,7 @@ sharepoint 1:
     - arguments: stuff
       description: Search for "stuff" on the Release Engineering's Sharepoint site
   tags:
-    - custom
     - sharepoint
-    - releng
 
 gilligan 1:
   url: https://gilligan.pearsondev.com/search?search=<query>
@@ -40,10 +36,8 @@ gilligan 1:
     - arguments: repository name
       description: Search for "repository name" on gilligan.pearsondev.com
   tags:
-    - custom
     - gilligan
     - gitlab
-    - releng
 
 snow 1:
   url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
@@ -53,9 +47,7 @@ snow 1:
     - arguments: keyword
       description: Search for "keyword" on pearsonnow.service-now.com
   tags:
-    - custom
     - servicenow
-    - releng
 
 hub 1:
   url: https://hub.pearson.com/search-center?search=<query>
@@ -65,9 +57,7 @@ hub 1:
     - arguments: document name
       description: Search for "document name" on hub.pearson.com
   tags:
-    - custom
     - hub
-    - releng
 
 ecr 1:
   url: https://gallery.ecr.aws/search?searchTerm=<query>
@@ -81,7 +71,6 @@ ecr 1:
     - dockerhub
     - amazon
     - ecr
-    - custom
 
 mydocs 0:
   url: https://gitlab.com/pearsontechnology/IO/pearson-io-releng/troubleshooting-docs/-/blob/main/docs/collapsable_doc_index.md
@@ -89,8 +78,6 @@ mydocs 0:
   description: Our collapsable internal documentation site
   tags:
     - docs
-    - releng
-    - custom
 
 pd 1:
   url: https://pearsonai.pagerduty.com/search/?searchString=<query>&searchType%5B%5D=incident&sortBy=relevance&team%5B%5D=P0FY9Z3
@@ -101,8 +88,6 @@ pd 1:
       description: Search incidents on PagerDuty for "outage"
   tags:
     - pagerduty
-    - releng
-    - custom
 
 splunk 0:
   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng
@@ -110,8 +95,6 @@ splunk 0:
   description: Open Pearson AI Splunk
   tags:
     - splunk
-    - releng
-    - custom
 
 splunk 1:
   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
@@ -136,8 +119,6 @@ awsec2 1:
   title: AWS Console EC2 instance search
   description: Search for an instance ID within the AWS Console (with currently logged in console session)
   tags:
-    - releng
-    - custom
     - aws
     - ec2
     - amazon
@@ -148,7 +129,9 @@ awsssm 1:
   description: Connect to an EC2 instance using ssm within the AWS Console
   tags:
     - ssm
-  include: awsec2 1
+    - aws
+    - ec2
+    - amazon
 
 awssh 0:
   url: https://us-east-1.console.aws.amazon.com/cloudshell/home
@@ -162,4 +145,6 @@ awsdocs 1:
   description: Search keywords within the AWS documentation site
   tags:
     - docs
-  include: awsec2 1
+    - aws
+    - ec2
+    - amazon
