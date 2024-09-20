@@ -146,9 +146,9 @@ awsssm 1:
   url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
   title: AWS Console SSM connection
   description: Connect to an EC2 instance using ssm within the AWS Console
-  include: awsec2 1
   tags:
     - ssm
+  include: awsec2 1
 
 awssh 0:
   url: https://us-east-1.console.aws.amazon.com/cloudshell/home
@@ -160,6 +160,6 @@ awsdocs 1:
   url: https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=<query>
   title: AWS documentation
   description: Search keywords within the AWS documentation site
-  include: awsec2 1
   tags:
     - docs
+  include: awsec2 1
