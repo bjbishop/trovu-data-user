@@ -114,14 +114,14 @@ splunk 2:
     - arguments: farnsworth, FATAL
       description: Search Splunk within the host="farnsworth" since 30 minutes ago for messages containing "FATAL"
 
-splunk 3:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param3>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-<param2>%40m&latest=now
-  title: Controller specific Splunk search with timerange
-  description: Search "controller" since "timerange" for "message" in Pearson AI Splunk
-  include: splunk 0
-  examples:
-    - arguments: farnsworth, 42m, FATAL
-      description: Search Splunk within the host="farnsworth" since 42 minutes ago for messages containing "FATAL"
+# splunk 3:
+#   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param3>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-<param2>%40m&latest=now
+#   title: Controller specific Splunk search with timerange
+#   description: Search "controller" since "timerange" for "message" in Pearson AI Splunk
+#   include: splunk 0
+#   examples:
+#     - arguments: farnsworth, 42m, FATAL
+#       description: Search Splunk within the host="farnsworth" since 42 minutes ago for messages containing "FATAL"
 
 awsec2 0:
   url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
