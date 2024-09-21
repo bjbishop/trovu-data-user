@@ -189,3 +189,6 @@ shchk 1:
   examples:
     - arguments: 1000
       description: Search for "SC1000" in the Shellcheck wiki
+
+shellcheck 1:
+  include: shchk 1
