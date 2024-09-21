@@ -180,12 +180,12 @@ trail 1:
 
 
 shchk 1:
-  url: https://www.shellcheck.net/wiki/<query>
+  url: https://www.shellcheck.net/wiki/SC<query>
   title: Shellcheck lookup
-  description: Search for a shellcheck code
+  description: Search for a shellcheck code, use the digits only
   tags:
     - bash
     - shell
   examples:
-    - arguments: SC1000
+    - arguments: 1000
       description: Search for "SC1000" in the Shellcheck wiki
