@@ -204,3 +204,16 @@ man 1:
   examples:
     - arguments: cron
       description: Search for "cron" using a Google site search of man7.org/linux/man-pages
+
+info 0:
+  url: https://www.gnu.org/software/coreutils/manual/html_node/index.html
+  title: GNU Coreutils info
+  description: GNU Coreutils info browser
+  tags:
+    - linux
+    - gnu
+    - info
+
+gnu 0:
+  url: https://www.gnu.org/software/software.html
+  include: info 0
