@@ -194,7 +194,7 @@ shellcheck 1:
   include: shchk 1
 
 man 1:
-  url: https://www.google.com/search?hl=<$language>&q=site%3Aman7.org/linux/man-pages%20<query>
+  url: https://www.google.com/search?as_q=<query>&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=lang_<$language>&cr=&as_qdr=all&as_sitesearch=man7.org/linux/man-pages&as_occt=any&as_filetype=&tbs=
   title: Linux man page search
   description: Search for a Linux man page using Google site search of man7.org/linux/man-pages
   tags:
