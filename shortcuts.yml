@@ -195,7 +195,6 @@ shellcheck 1:
 
 man 1:
   url: https://duckduckgo.com/?q=site%3Aman7.org%2Flinux%2Fman-pages+<query>&kp=1&t=h_&ia=web
-  # url: https://www.google.com/search?as_q=<query>&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=lang_<$language>&cr=&as_qdr=all&as_sitesearch=man7.org/linux/man-pages&as_occt=any&as_filetype=&tbs=
   title: Linux man page search
   description: Search for a Linux man page using Duckduckgo site search of man7.org/linux/man-pages
   tags:
@@ -218,3 +217,20 @@ info 0:
 gnu 0:
   url: https://www.gnu.org/software/software.html
   include: info 0
+
+w3w 0:
+  url: https://what3words.com/
+  title: What3words location
+  description: Open the what3words.com page
+  tags:
+    - gps
+    - location
+    - navigation
+    - maps
+
+w3w 1:
+  url: https://what3words.com/<query>
+  include: w3w 0
+  examples:
+    - arguments: gates.beyond.broken
+      description: Open ///gates.beyond.broken on what3words.com
