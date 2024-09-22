@@ -234,3 +234,42 @@ w3w 1:
   examples:
     - arguments: gates.beyond.broken
       description: Open ///gates.beyond.broken on what3words.com
+
+kp 0:
+  url: https://keep.google.com/
+  description: Google keep
+  tags:
+    - google
+    - notes
+    - keep
+
+kp 1:
+  url: https://keep.google.com/u/0/#search/text%253D<query>
+  description: Search for a keyword in Google keep
+  include: keep 0
+  examples:
+    - arguments: apple
+      description: Search for "apple" in Google keep
+
+keep 1:
+  include: kp 1
+
+gkp 1:
+  include: kp 1
+
+gkeep 1:
+  include: kp 1
+
+tsk 0:
+  url: https://calendar.google.com/calendar/u/0/r/tasks
+  description: Open google tasks
+  tags:
+    - google
+    - notes
+    - tasks
+
+gtsk 0:
+  include: tsk 0
+
+gtask 0:
+  include: tsk 0
