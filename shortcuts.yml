@@ -298,4 +298,4 @@ bgg 1:
       description: Search for "carcassonne" in Board Game Geek
   tests:
     - arguments: carcassonne
-      expect: <title>Carcassonne | Board Game | BoardGameGeek</title>
+      expect: <title>foobard testing</title>
