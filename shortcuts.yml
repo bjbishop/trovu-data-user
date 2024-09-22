@@ -289,7 +289,7 @@ bgg 0:
     - fun
 
 bgg 1:
-  url: https://boardgamegeek.com/geeksearch.php?action=search&q=<query>
+  url: https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=<query>
   title: Search Board Game Geek
   description: Search for a keyword on boardgamegeek.com
   include: bgg 0
