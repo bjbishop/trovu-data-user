@@ -296,5 +296,6 @@ bgg 1:
   examples:
     - arguments: carcassonne
       description: Search for "carcassonne" in Board Game Geek
-      expected:
-      title: Carcassonne | Board Game | BoardGameGeek
+  tests:
+    - arguments: carcassonne
+      expect: <title>Carcassonne | Board Game | BoardGameGeek</title>
