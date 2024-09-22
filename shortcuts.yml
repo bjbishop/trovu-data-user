@@ -278,3 +278,23 @@ fast 1:
 
 fst 1:
   include: fast 1
+
+bgg 0:
+  url: https://boardgamegeek.com
+  title: Board Game Geek
+  description: Navigate to Boardgamegeek.com
+  tags:
+    - game
+    - boardgames
+    - fun
+
+bgg 1:
+  url: https://boardgamegeek.com/geeksearch.php?action=search&q=<query>
+  title: Search Board Game Geek
+  description: Search for a keyword on boardgamegeek.com
+  include: bgg 0
+  examples:
+    - arguments: carcassonne
+      description: Search for "carcassonne" in Board Game Geek
+      expected:
+      title: Carcassonne | Board Game | BoardGameGeek
