@@ -299,3 +299,20 @@ bgg 1:
   # tests:
   #   - arguments: carcassonne
   #     expect: <title>Carcassonne | Board Game | BoardGameGeek</title>
+
+inst 0:
+  url: https://www.instructables.com/
+  title: Instructuables
+  description: Instructions on making things with Instructables
+  tags:
+    - fun
+    - hobby
+
+inst 1:
+  url: https://www.instructables.com/search/?q=<query>&projects=all
+  title: Search Instructables
+  description: Search for a keyword on Instructables
+  include: inst 0
+  examples:
+    - arguments: guitar
+      description: Search for "guitar" in Instructables.com
