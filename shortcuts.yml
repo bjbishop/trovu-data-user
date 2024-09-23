@@ -345,3 +345,15 @@ chg 1:
   examples:
     - arguments: CHG0065184
       description: Search for change ticket "CHG0065184" in Pearson Servicenow
+
+ec2type 1:
+  url: https://instances.vantage.sh/?filter=<query>
+  title: Search AWS Instance types
+  description: Search for a keyword on AWS Instance types
+  tags:
+    - aws
+    - amazon
+    - ec2
+  examples:
+    - arguments: m6a.4xlarge
+      description: Search for "m6a.4xlarge" on AWS Instance types, instances.vantage.sh
