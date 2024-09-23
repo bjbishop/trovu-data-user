@@ -335,16 +335,16 @@ rdrop 1:
     - arguments: something
       description: Search for "something" on Raindrop.io
 
-chg 1:
-  url: https://pearsonnow.service-now.com/now/nav/ui/classic/params/target/change_request.do%3Fsys_id%3D951d89c197b412105b9cf8771153afb7%26sysparm_record_target%3Dchange_request%26sysparm_record_row%3D1%26sysparm_record_rows%3D1%26sysparm_record_list%3Dnumber%253D<query>%255EORDERBYnumber
-  title: Search for Servicenow change ticket
-  description: Search servicenow for a CHG ticket number
-  tags:
-    - work
-    - servicenow
-  examples:
-    - arguments: CHG0065184
-      description: Search for change ticket "CHG0065184" in Pearson Servicenow
+# chg 1:
+#   url: https://pearsonnow.service-now.com/now/nav/ui/classic/params/target/change_request.do%3Fsys_id%3D951d89c197b412105b9cf8771153afb7%26sysparm_record_target%3Dchange_request%26sysparm_record_row%3D1%26sysparm_record_rows%3D1%26sysparm_record_list%3Dnumber%253D<query>%255EORDERBYnumber
+#   title: Search for Servicenow change ticket
+#   description: Search servicenow for a CHG ticket number
+#   tags:
+#     - work
+#     - servicenow
+#   examples:
+#     - arguments: CHG0065184
+#       description: Search for change ticket "CHG0065184" in Pearson Servicenow
 
 ec2type 1:
   url: https://instances.vantage.sh/?filter=<query>
