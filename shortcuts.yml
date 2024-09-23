@@ -334,3 +334,14 @@ rdrop 1:
   examples:
     - arguments: something
       description: Search for "something" on Raindrop.io
+
+chg 1:
+  url: https://pearsonnow.service-now.com/now/nav/ui/classic/params/target/change_request_list.do%3Fsysparm_first_row%3D1%26sysparm_query%3DGOTOnumber%253d<query>%26sysparm_query_encoded%3DGOTOnumber%253dCHG0065184%26sysparm_view%3D
+  title: Search for Servicenow change ticket
+  description: Search servicenow for a CHG ticket number
+  tags:
+    - work
+    - servicenow
+  examples:
+    - arguments: CHG0065184
+      description: Search for change ticket "CHG0065184" in Pearson Servicenow
