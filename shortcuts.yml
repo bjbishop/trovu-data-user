@@ -355,5 +355,5 @@ ec2type 1:
     - amazon
     - ec2
   examples:
-    - arguments: m6a.4xlarge
-      description: Search for "m6a.4xlarge" on AWS Instance types, instances.vantage.sh
+    - arguments: m6a
+      description: Search for "m6a" on AWS Instance types, instances.vantage.sh
