@@ -316,3 +316,21 @@ inst 1:
   examples:
     - arguments: guitar
       description: Search for "guitar" in Instructables.com
+
+
+rdrop 0:
+  url: https://app.raindrop.io/
+  title: Raindrop.io
+  description: Open Raindrop.io
+  tags:
+    - bookmarks
+    - productivity
+
+rdrop 1:
+  url: https://app.raindrop.io/my/0/<query>
+  title: Search Raindrop.io
+  description: Search for a keyword on Raindrop
+  include: rdrop 0
+  examples:
+    - arguments: something
+      description: Search for "something" on Raindrop.io
