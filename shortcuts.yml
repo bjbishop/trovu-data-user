@@ -368,3 +368,13 @@ jplug 1:
   examples:
     - arguments: script-security
       description: Search for "script-security" on Jenkins plugins
+
+jenkins 2:
+  url: https://<param1>-jenkins.pearsondev.com/search/?q=<param2>
+  title: Search Jenkins controllers for a job
+  description: Search for a keyword on Jenkins controllers for a job
+  tags:
+    - jenkins
+  examples:
+    - arguments: name,something
+      description: Search for "something" on a Jenkins controller named "name" for a job
