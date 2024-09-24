@@ -93,7 +93,7 @@ pd 1:
     - pagerduty
 
 splunk 0:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng
+  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22
   title: Pearson AI Splunk
   description: Open Pearson AI Splunk
   tags:
