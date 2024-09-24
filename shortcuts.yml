@@ -357,3 +357,14 @@ ec2type 1:
   examples:
     - arguments: m6a
       description: Search for "m6a" on AWS Instance types, instances.vantage.sh
+
+
+jplug 1:
+  url: https://plugins.jenkins.io/ui/search/?sort=relevance&categories=&labels=&view=Tiles&page=1&query=<query>
+  title: Search Jenkins plugins
+  description: Search for a keyword on Jenkins plugins
+  tags:
+    - tag
+  examples:
+    - arguments: script-security
+      description: Search for "script-security" on Jenkins plugins
