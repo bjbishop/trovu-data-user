@@ -371,10 +371,10 @@ jplug 1:
 
 jenkins 2:
   url: https://<param1>-jenkins.pearsondev.com/search/?q=<param2>
-  title: Search Jenkins controllers for a job
-  description: Search for a keyword on Jenkins controllers for a job
+  title: Search a Jenkins controller for a job
+  description: Search for a job name on a Jenkins controller
   tags:
     - jenkins
   examples:
-    - arguments: name,something
-      description: Search for "something" on a Jenkins controller named "name" for a job
+    - arguments: name,jobname
+      description: Search for "jobname" on a Jenkins controller named "name"
