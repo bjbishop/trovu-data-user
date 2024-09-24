@@ -364,7 +364,7 @@ jplug 1:
   title: Search Jenkins plugins
   description: Search for a keyword on Jenkins plugins
   tags:
-    - tag
+    - jenkins
   examples:
     - arguments: script-security
       description: Search for "script-security" on Jenkins plugins
