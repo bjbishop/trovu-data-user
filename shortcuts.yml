@@ -363,18 +363,29 @@ jplug 1:
   url: https://plugins.jenkins.io/ui/search/?sort=relevance&categories=&labels=&view=Tiles&page=1&query=<query>
   title: Search Jenkins plugins
   description: Search for a keyword on Jenkins plugins
-  tags:
-    - jenkins
+  include: jenkins 1
   examples:
     - arguments: script-security
       description: Search for "script-security" on Jenkins plugins
+
+jenkins 1:
+  url: https://<query>-jenkins.pearsondev.com/
+  title: Open a Jenkins controller
+  description: Search for a job name on a Jenkins controller
+  tags:
+    - jenkins
+  examples:
+    - arguments: name
+      description: Open a Jenkins controller named "name"
 
 jenkins 2:
   url: https://<param1>-jenkins.pearsondev.com/search/?q=<param2>
   title: Search a Jenkins controller for a job
   description: Search for a job name on a Jenkins controller
-  tags:
-    - jenkins
+  include: jenkins 1
   examples:
     - arguments: name,jobname
       description: Search for "jobname" on a Jenkins controller named "name"
+
+# runas
+# tabletopaudio - no searching
