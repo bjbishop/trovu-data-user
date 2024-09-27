@@ -376,7 +376,7 @@ jplug 1:
 jenkins 1:
   url: https://<query>-jenkins.pearsondev.com/
   title: Open a Jenkins controller
-  description: Search for a job name on a Jenkins controller
+  description: Open a Jenkins controller
   tags:
     - jenkins
   examples:
