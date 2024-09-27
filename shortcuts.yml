@@ -48,15 +48,15 @@ gilligan 1:
 gill 1:
   include: gilligan 1
 
-snow 1:
-  url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
-  title: Search servicenow
-  description: Search for keywords on Pearson's Servicenow
-  examples:
-    - arguments: keyword
-      description: Search for "keyword" on pearsonnow.service-now.com
-  tags:
-    - servicenow
+# snow 1:
+#   url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
+#   title: Search servicenow
+#   description: Search for keywords on Pearson's Servicenow
+#   examples:
+#     - arguments: keyword
+#       description: Search for "keyword" on pearsonnow.service-now.com
+#   tags:
+#     - servicenow
 
 hub 1:
   url: https://hub.pearson.com/search-center?search=<query>
@@ -395,5 +395,8 @@ jenkins 2:
 # runas
 # tabletopaudio - no searching
 
-test 1:
-  url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill][%23simpleSearchForm\:fpSearch\:input]=<query>&trovu[submit]=%5Bid%5E%3D%22simpleSearchForm%3AfpSearch%3Aj_idt1370%22
+# test 1:
+#   url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill][%23simpleSearchForm\:fpSearch\:input]=<query>&trovu[submit]=%5Bid%5E%3D%22simpleSearchForm%3AfpSearch%3Aj_idt1370%22
+
+snow 1:
+  url: https://pearsonnow.service-now.com/now/nav/ui/home#trovu[fill][Search]=<query>&trovu[submit]=
