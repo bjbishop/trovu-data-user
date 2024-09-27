@@ -394,3 +394,6 @@ jenkins 2:
 
 # runas
 # tabletopaudio - no searching
+
+test 1:
+  url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill][%23simpleSearchForm\:fpSearch\:input]=<query>&trovu[submit]=%5Bid%5E%3D%22simpleSearchForm%3AfpSearch%3Aj%22%5D
