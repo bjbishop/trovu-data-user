@@ -399,4 +399,4 @@ jenkins 2:
 #   url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill][%23simpleSearchForm\:fpSearch\:input]=<query>&trovu[submit]=%5Bid%5E%3D%22simpleSearchForm%3AfpSearch%3Aj_idt1370%22
 
 snow 1:
-  url: https://pearsonnow.service-now.com/now/nav/ui/home#trovu[fill][Search]=<query>&trovu[submit]=
+  url: https://pearsonnow.service-now.com/now/nav/ui/home#trovu[fill][vkzcr9k396je-37]=<query>&trovu[submit]=
