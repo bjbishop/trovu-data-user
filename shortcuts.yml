@@ -21,18 +21,25 @@ ticket 1:
 tkt 1:
   include: ticket 1
 
+sharepoint 0:
+  url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/
+  title: Release Engineering Sharepoint
+  tags:
+    - sharepoint
+
 sharepoint 1:
   url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
-  title: Release Engineering Sharepoint
+  include: sharepoint 0
   description: Search documentation within the Release Engineering Sharepoint site
   examples:
     - arguments: stuff
       description: Search for "stuff" on the Release Engineering's Sharepoint site
-  tags:
-    - sharepoint
 
 shpt 1:
   include: sharepoint 1
+
+shpt 0:
+  include: sharepoint 0
 
 gilligan 1:
   url: https://gilligan.pearsondev.com/search?search=<query>
