@@ -209,16 +209,16 @@ shellcheck 1:
   include: shchk 1
 
 man 1:
-  url: https://duckduckgo.com/?q=site%3Aman7.org%2Flinux%2Fman-pages+<query>&kp=1&t=h_&ia=web
+  url: https://www.mankier.com/1/<query>
   title: Linux man page search
-  description: Search for a Linux man page using Duckduckgo site search of man7.org/linux/man-pages
+  description: Search for a Linux man page using Mankier
   tags:
     - man
     - manual
     - linux
   examples:
     - arguments: cron
-      description: Search for "cron" using a Duckduckgo site search of man7.org/linux/man-pages
+      description: Search for "cron" using Mankier.com
 
 info 0:
   url: https://www.gnu.org/software/coreutils/manual/html_node/index.html
