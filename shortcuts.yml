@@ -309,9 +309,6 @@ bgg 1:
   examples:
     - arguments: carcassonne
       description: Search for "carcassonne" in Board Game Geek
-  # tests:
-  #   - arguments: carcassonne
-  #     expect: <title>Carcassonne | Board Game | BoardGameGeek</title>
 
 inst 0:
   url: https://www.instructables.com/
@@ -428,3 +425,13 @@ pill 1:
   examples:
     - arguments: I-2
       description: Search for a pill imprinted with "I-2" on drugs.com
+
+nin 1:
+  url: https://www.nintendo.com/us/search/#q=<query>
+  title: Nintendo eShop
+  description: Search for a game on Nintendo's eShop
+  tags:
+    - games
+  examples:
+    - arguments: Mario Kart
+      description: Search for "Mario Kart" on Nintendo's eShop
