@@ -435,3 +435,15 @@ nin 1:
   examples:
     - arguments: Mario Kart
       description: Search for "Mario Kart" on Nintendo's eShop
+
+
+cheat 1:
+  url: https://cheatography.com/explore/search/?q=<query>
+  title: Search Cheatography
+  description: Search for a keyword on Cheatography
+  examples:
+    - arguments: Python
+      description: Search for "Python" on Cheatography
+
+cht 1:
+  include: cheat 1
