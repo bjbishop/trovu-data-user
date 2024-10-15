@@ -417,3 +417,14 @@ qrz 1:
   examples:
     - arguments: KC0RJX
       description: Search for "KC0RJX" on QRZ
+
+pill 1:
+  url: https://www.drugs.com/imprints.php?imprint=<query>
+  title: Identify a pill
+  description: Search for a pill identified by drugs.com
+  tags:
+    - health
+    - medical
+  examples:
+    - arguments: I-2
+      description: Search for a pill imprinted with "I-2" on drugs.com
