@@ -447,3 +447,10 @@ cheat 1:
 
 cht 1:
   include: cheat 1
+
+jj 0:
+  url: https://pearson.grafana.net/d/TYQ--Ei4z/jenkins-service-metrics?orgId=1&viewPanel=panel-18&from=now-30d&to=now&timezone=utc&var-farm=$__all&var-farm_long=$__all
+  title: List all Jenkins jobs
+  description: List all Jenkins jobs on grafana
+  tags:
+    - jenkins
