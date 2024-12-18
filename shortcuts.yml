@@ -454,3 +454,13 @@ jj 0:
   description: List all Jenkins jobs on grafana
   tags:
     - jenkins
+
+usps 1:
+  url: https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=<query>
+  title: US Postal Service tracking
+  description: Track an item in the US Postal Service
+  tags:
+    - shipping
+  examples:
+    - arguments: 123456
+      description: Search for a US Postal Service package with ID 123456
