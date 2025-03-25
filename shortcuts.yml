@@ -464,3 +464,14 @@ usps 1:
   examples:
     - arguments: 123456
       description: Search for a US Postal Service package with ID 123456
+
+libt 1:
+  url: https://www.librarything.com/search.php?search=<query>
+  title: Search LibraryThing
+  description: Search for a book on LibraryThing
+  tags:
+    - books
+    - library
+  examples:
+    - arguments: The Hobbit
+      description: Search for "The Hobbit" on LibraryThing
