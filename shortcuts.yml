@@ -475,3 +475,14 @@ libt 1:
   examples:
     - arguments: The Hobbit
       description: Search for "The Hobbit" on LibraryThing
+
+flathub 1:
+  url: https://flathub.org/apps/search?q=<query>
+  title: Search Flathub
+  description: Search for a keyword on Flathub
+  tags:
+    - flatpak
+    - linux
+  examples:
+    - arguments: emacs
+      description: Search for "emacs" on Flathub
