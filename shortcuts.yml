@@ -1,22 +1,22 @@
 ---
 jira 1:
-  url: https://agile-jira.pearson.com/browse/RELENG-0?jql=project%20%3D%20RELENG%20AND%20text%20~%20%22<query>%22%20ORDER%20BY%20created%20DESC
+  url: https://pearson.atlassian.net/issues/?jql=textfields%20~%20%22<query>*%22%20AND%20project%20%3D%20RELENG&wildcardFlag=true
   title: JIRA keyword search
-  description: Search a keyword within the RELENG project in agile-JIRA
+  description: Search a keyword within the RELENG project in atlassian-JIRA
   examples:
     - arguments: project ideas
-      description: Search for "project ideas" within the RELENG project of agile-jira.pearson.com
+      description: Search for "project ideas" within the RELENG project of pearson.atlassian.net JIRA
   tags:
     - jira
 
 ticket 1:
-  url: https://agile-jira.pearson.com/browse/RELENG-<query>
+  url: https://pearson.atlassian.net/browse/RELENG-<query>
   title: JIRA ticket search
-  description: Search a specific ticket within agile-JIRA
+  description: Search a specific ticket within atlassian-JIRA
   include: jira 1
   examples:
     - arguments: 1234
-      description: Search for RELENG-1234 on the RELENG project of agile-jira.pearson.com
+      description: Search for RELENG-1234 on the RELENG project of pearson.atlassian.net JIRA
 
 tkt 1:
   include: ticket 1
