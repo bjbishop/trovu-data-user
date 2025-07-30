@@ -1,59 +1,59 @@
 ---
 jira 1:
-  url: https://pearson.atlassian.net/issues/?jql=textfields%20~%20%22<query>*%22%20AND%20project%20%3D%20RELENG&wildcardFlag=true
-  title: JIRA keyword search
-  description: Search a keyword within the RELENG project in atlassian-JIRA
-  examples:
-  - arguments: project ideas
-    description: Search for "project ideas" within the RELENG project of pearson.atlassian.net JIRA
-  tags:
-  - jira
+    url: https://pearson.atlassian.net/issues/?jql=textfields%20~%20%22<query>*%22%20AND%20project%20%3D%20RELENG&wildcardFlag=true
+    title: JIRA keyword search
+    description: Search a keyword within the RELENG project in atlassian-JIRA
+    examples:
+      - arguments: project ideas
+        description: Search for "project ideas" within the RELENG project of pearson.atlassian.net JIRA
+    tags:
+      - jira
 
 ticket 1:
-  url: https://pearson.atlassian.net/browse/RELENG-<query>
-  title: JIRA ticket search
-  description: Search a specific ticket within atlassian-JIRA
-  include: jira 1
-  examples:
-  - arguments: 1234
-    description: Search for RELENG-1234 on the RELENG project of pearson.atlassian.net JIRA
+    url: https://pearson.atlassian.net/browse/RELENG-<query>
+    title: JIRA ticket search
+    description: Search a specific ticket within atlassian-JIRA
+    include: jira 1
+    examples:
+      - arguments: 1234
+        description: Search for RELENG-1234 on the RELENG project of pearson.atlassian.net JIRA
 
 tkt 1:
-  include: ticket 1
+    include: ticket 1
 
 sharepoint 0:
-  url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/
-  title: Release Engineering Sharepoint
-  tags:
-  - sharepoint
+    url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/
+    title: Release Engineering Sharepoint
+    tags:
+      - sharepoint
 
 sharepoint 1:
-  url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
-  include: sharepoint 0
-  description: Search documentation within the Release Engineering Sharepoint site
-  examples:
-  - arguments: stuff
-    description: Search for "stuff" on the Release Engineering's Sharepoint site
+    url: https://pearsoneducationinc.sharepoint.com/sites/TOIOReleaseEngineering/_layouts/15/search.aspx/siteall?q=<query>
+    include: sharepoint 0
+    description: Search documentation within the Release Engineering Sharepoint site
+    examples:
+      - arguments: stuff
+        description: Search for "stuff" on the Release Engineering's Sharepoint site
 
 shpt 1:
-  include: sharepoint 1
+    include: sharepoint 1
 
 shpt 0:
-  include: sharepoint 0
+    include: sharepoint 0
 
 gilligan 1:
-  url: https://gilligan.pearsondev.com/search?search=<query>
-  title: Search Gilligan
-  description: Search gilligan.pearsondev.com our internal gitlab instance
-  examples:
-  - arguments: repository name
-    description: Search for "repository name" on gilligan.pearsondev.com
-  tags:
-  - gilligan
-  - gitlab
+    url: https://gilligan.pearsondev.com/search?search=<query>
+    title: Search Gilligan
+    description: Search gilligan.pearsondev.com our internal gitlab instance
+    examples:
+      - arguments: repository name
+        description: Search for "repository name" on gilligan.pearsondev.com
+    tags:
+      - gilligan
+      - gitlab
 
 gill 1:
-  include: gilligan 1
+    include: gilligan 1
 
 # snow 1:
 #   url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
@@ -66,69 +66,69 @@ gill 1:
 #     - servicenow
 
 hub 1:
-  url: https://hub.pearson.com/search-center?search=<query>
-  title: Pearson Hub
-  description: Search keywords within Pearson's hub
-  examples:
-  - arguments: document name
-    description: Search for "document name" on hub.pearson.com
-  tags:
-  - hub
+    url: https://hub.pearson.com/search-center?search=<query>
+    title: Pearson Hub
+    description: Search keywords within Pearson's hub
+    examples:
+      - arguments: document name
+        description: Search for "document name" on hub.pearson.com
+    tags:
+      - hub
 
 ecr 1:
-  url: https://gallery.ecr.aws/search?searchTerm=<query>
-  title: Public ECR gallery
-  description: Search keywords in Amazon's ECR public gallery
-  examples:
-  - arguments: maven
-    description: Search for "maven" on AWS Public ECR gallery
-  tags:
-  - docker
-  - dockerhub
-  - amazon
-  - ecr
+    url: https://gallery.ecr.aws/search?searchTerm=<query>
+    title: Public ECR gallery
+    description: Search keywords in Amazon's ECR public gallery
+    examples:
+      - arguments: maven
+        description: Search for "maven" on AWS Public ECR gallery
+    tags:
+      - docker
+      - dockerhub
+      - amazon
+      - ecr
 
 mydocs 0:
-  url: https://gitlab.com/pearsontechnology/IO/pearson-io-releng/troubleshooting-docs/-/blob/main/docs/collapsable_doc_index.md
-  title: Internal documentation
-  description: Our collapsable internal documentation site
-  tags:
-  - docs
+    url: https://gitlab.com/pearsontechnology/IO/pearson-io-releng/troubleshooting-docs/-/blob/main/docs/collapsable_doc_index.md
+    title: Internal documentation
+    description: Our collapsable internal documentation site
+    tags:
+      - docs
 
 pd 1:
-  url: https://pearsonai.pagerduty.com/search/?searchString=<query>&searchType%5B%5D=incident&sortBy=relevance&team%5B%5D=P0FY9Z3
-  title: Pearson AI PagerDuty
-  description: Search keywords within Pearson AI PagerDuty incidents
-  examples:
-  - arguments: outage
-    description: Search incidents on PagerDuty for "outage"
-  tags:
-  - pagerduty
+    url: https://pearsonai.pagerduty.com/search/?searchString=<query>&searchType%5B%5D=incident&sortBy=relevance&team%5B%5D=P0FY9Z3
+    title: Pearson AI PagerDuty
+    description: Search keywords within Pearson AI PagerDuty incidents
+    examples:
+      - arguments: outage
+        description: Search incidents on PagerDuty for "outage"
+    tags:
+      - pagerduty
 
 splunk 0:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22
-  title: Pearson AI Splunk
-  description: Open Pearson AI Splunk
-  tags:
-  - splunk
+    url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22
+    title: Pearson AI Splunk
+    description: Open Pearson AI Splunk
+    tags:
+      - splunk
 
 splunk 1:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
-  title: Pearson AI Splunk
-  description: Search keywords within Pearson AI Splunk
-  include: splunk 0
-  examples:
-  - arguments: FATAL
-    description: Search Splunk for messages containing "FATAL"
+    url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
+    title: Pearson AI Splunk
+    description: Search keywords within Pearson AI Splunk
+    include: splunk 0
+    examples:
+      - arguments: FATAL
+        description: Search Splunk for messages containing "FATAL"
 
 splunk 2:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now
-  title: Controller specific Splunk search
-  description: Search "controller" since 30 minutes ago for "message" in Pearson AI Splunk
-  include: splunk 0
-  examples:
-  - arguments: farnsworth, FATAL
-    description: Search Splunk within the host="farnsworth" since 30 minutes ago for messages containing "FATAL"
+    url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now
+    title: Controller specific Splunk search
+    description: Search "controller" since 30 minutes ago for "message" in Pearson AI Splunk
+    include: splunk 0
+    examples:
+      - arguments: farnsworth, FATAL
+        description: Search Splunk within the host="farnsworth" since 30 minutes ago for messages containing "FATAL"
 
 # splunk 3:
 #   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param3>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-<param2>%40m&latest=now
@@ -140,209 +140,209 @@ splunk 2:
 #       description: Search Splunk within the host="farnsworth" since 42 minutes ago for messages containing "FATAL"
 
 awsec2 0:
-  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
-  title: AWS Console EC2
-  description: Open the AWS Console (with currently logged in console session)
-  tags:
-  - aws
-  - ec2
-  - amazon
+    url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
+    title: AWS Console EC2
+    description: Open the AWS Console (with currently logged in console session)
+    tags:
+      - aws
+      - ec2
+      - amazon
 
 awsec2 1:
-  url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:instanceState=running;search=:<query>;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false
-  title: AWS Console EC2 instance search
-  description: Search for a keyword within the AWS Console (with currently logged in console session)
-  include: awsec2 0
-  examples:
-  - arguments: testbox
-    description: Search the AWS EC2 console for "testbox"
+    url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:instanceState=running;search=:<query>;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false
+    title: AWS Console EC2 instance search
+    description: Search for a keyword within the AWS Console (with currently logged in console session)
+    include: awsec2 0
+    examples:
+      - arguments: testbox
+        description: Search the AWS EC2 console for "testbox"
 
 awsssm 1:
-  url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
-  title: AWS Console SSM connection
-  description: Connect to an EC2 instance using ssm within the AWS Console
-  tags:
-  - ssm
-  - aws
-  - ec2
-  - amazon
+    url: https://us-east-1.console.aws.amazon.com/systems-manager/session-manager/<query>
+    title: AWS Console SSM connection
+    description: Connect to an EC2 instance using ssm within the AWS Console
+    tags:
+      - ssm
+      - aws
+      - ec2
+      - amazon
 
 awssh 0:
-  url: https://us-east-1.console.aws.amazon.com/cloudshell/home
-  title: AWS Console cloud shell
-  description: Connect the cloud shell terminal within the AWS Console
-  include: awsec2 1
+    url: https://us-east-1.console.aws.amazon.com/cloudshell/home
+    title: AWS Console cloud shell
+    description: Connect the cloud shell terminal within the AWS Console
+    include: awsec2 1
 
 awsdocs 1:
-  url: https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=<query>
-  title: AWS documentation
-  description: Search keywords within the AWS documentation site
-  tags:
-  - docs
-  - aws
-  - ec2
-  - amazon
+    url: https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=<query>
+    title: AWS documentation
+    description: Search keywords within the AWS documentation site
+    tags:
+      - docs
+      - aws
+      - ec2
+      - amazon
 
 trail 1:
-  url: https://us-east-1.console.aws.amazon.com/cloudtrailv2/home?region=us-east-1#/events?ResourceName=<query>
-  title: AWS Cloudtrail events
-  description: Search for a resource in AWS Cloudtrail events
-  tags:
-  - aws
-  - amazon
-  examples:
-  - arguments: i-1234567
-    description: Search for "i-1234567" in AWS Cloudtrail events
+    url: https://us-east-1.console.aws.amazon.com/cloudtrailv2/home?region=us-east-1#/events?ResourceName=<query>
+    title: AWS Cloudtrail events
+    description: Search for a resource in AWS Cloudtrail events
+    tags:
+      - aws
+      - amazon
+    examples:
+      - arguments: i-1234567
+        description: Search for "i-1234567" in AWS Cloudtrail events
 
 shchk 1:
-  url: https://www.shellcheck.net/wiki/SC<query>
-  title: Shellcheck lookup
-  description: Search for a shellcheck code, use the digits only
-  tags:
-  - bash
-  - shell
-  examples:
-  - arguments: 1000
-    description: Search for "SC1000" in the Shellcheck wiki
+    url: https://www.shellcheck.net/wiki/SC<query>
+    title: Shellcheck lookup
+    description: Search for a shellcheck code, use the digits only
+    tags:
+      - bash
+      - shell
+    examples:
+      - arguments: 1000
+        description: Search for "SC1000" in the Shellcheck wiki
 
 shellcheck 1:
-  include: shchk 1
+    include: shchk 1
 
 man 1:
-  url: https://duckduckgo.com/?q=site%3Aman7.org%2Flinux%2Fman-pages+<query>&kp=1&t=h_&ia=web
-  title: Linux man page search
-  description: Search for a Linux man page using Duckduckgo site search of man7.org/linux/man-pages
-  tags:
-  - man
-  - manual
-  - linux
-  examples:
-  - arguments: cron
-    description: Search for "cron" using a Duckduckgo site search of man7.org/linux/man-pages
+    url: https://duckduckgo.com/?q=site%3Aman7.org%2Flinux%2Fman-pages+<query>&kp=1&t=h_&ia=web
+    title: Linux man page search
+    description: Search for a Linux man page using Duckduckgo site search of man7.org/linux/man-pages
+    tags:
+      - man
+      - manual
+      - linux
+    examples:
+      - arguments: cron
+        description: Search for "cron" using a Duckduckgo site search of man7.org/linux/man-pages
 
 info 0:
-  url: https://www.gnu.org/software/coreutils/manual/html_node/index.html
-  title: GNU Coreutils info
-  description: GNU Coreutils info browser
-  tags:
-  - linux
-  - gnu
-  - info
+    url: https://www.gnu.org/software/coreutils/manual/html_node/index.html
+    title: GNU Coreutils info
+    description: GNU Coreutils info browser
+    tags:
+      - linux
+      - gnu
+      - info
 
 gnu 0:
-  url: https://www.gnu.org/software/software.html
-  include: info 0
+    url: https://www.gnu.org/software/software.html
+    include: info 0
 
 w3w 0:
-  url: https://what3words.com/
-  title: What3words location
-  description: Open the what3words.com page
-  tags:
-  - gps
-  - location
-  - navigation
-  - maps
+    url: https://what3words.com/
+    title: What3words location
+    description: Open the what3words.com page
+    tags:
+      - gps
+      - location
+      - navigation
+      - maps
 
 w3w 1:
-  url: https://what3words.com/<query>
-  title: What3words
-  description: Query and address within what3words.com
-  include: w3w 0
-  examples:
-  - arguments: gates.beyond.broken
-    description: Open ///gates.beyond.broken on what3words.com
+    url: https://what3words.com/<query>
+    title: What3words
+    description: Query and address within what3words.com
+    include: w3w 0
+    examples:
+      - arguments: gates.beyond.broken
+        description: Open ///gates.beyond.broken on what3words.com
 
 keep 1:
-  include: gkp 1
+    include: gkp 1
 
 tsk 0:
-  url: https://calendar.google.com/calendar/u/0/r/tasks
-  title: Google tasks
-  tags:
-  - google
-  - notes
-  - tasks
+    url: https://calendar.google.com/calendar/u/0/r/tasks
+    title: Google tasks
+    tags:
+      - google
+      - notes
+      - tasks
 
 gtsk 0:
-  include: tsk 0
+    include: tsk 0
 
 gtask 0:
-  include: tsk 0
+    include: tsk 0
 
 fast 0:
-  url: https://app.fastmail.com/mail
-  title: Fastmail
-  description: Open the fastmail.com page
-  tags:
-  - fastmail
-  - mail
+    url: https://app.fastmail.com/mail
+    title: Fastmail
+    description: Open the fastmail.com page
+    tags:
+      - fastmail
+      - mail
 
 fst 0:
-  include: fast 0
+    include: fast 0
 
 fast 1:
-  url: https://app.fastmail.com/mail/search:<query>
-  title: Fastmail search
-  description: Search for a keyword within Fastmail.com
-  include: fast 0
-  examples:
-  - arguments: school
-    description: Search for "school" within fastmail.com
+    url: https://app.fastmail.com/mail/search:<query>
+    title: Fastmail search
+    description: Search for a keyword within Fastmail.com
+    include: fast 0
+    examples:
+      - arguments: school
+        description: Search for "school" within fastmail.com
 
 fst 1:
-  include: fast 1
+    include: fast 1
 
 bgg 0:
-  url: https://boardgamegeek.com
-  title: Board Game Geek
-  description: Navigate to Boardgamegeek.com
-  tags:
-  - game
-  - boardgames
-  - fun
+    url: https://boardgamegeek.com
+    title: Board Game Geek
+    description: Navigate to Boardgamegeek.com
+    tags:
+      - game
+      - boardgames
+      - fun
 
 bgg 1:
-  url: https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=<query>
-  title: Search Board Game Geek
-  description: Search for a keyword on boardgamegeek.com
-  include: bgg 0
-  examples:
-  - arguments: carcassonne
-    description: Search for "carcassonne" in Board Game Geek
+    url: https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=<query>
+    title: Search Board Game Geek
+    description: Search for a keyword on boardgamegeek.com
+    include: bgg 0
+    examples:
+      - arguments: carcassonne
+        description: Search for "carcassonne" in Board Game Geek
 
 inst 0:
-  url: https://www.instructables.com/
-  title: Instructables
-  description: Instructions on making things with Instructables
-  tags:
-  - fun
-  - hobby
+    url: https://www.instructables.com/
+    title: Instructables
+    description: Instructions on making things with Instructables
+    tags:
+      - fun
+      - hobby
 
 inst 1:
-  url: https://www.instructables.com/search/?q=<query>&projects=all
-  title: Search Instructables
-  description: Search for a keyword on Instructables
-  include: inst 0
-  examples:
-  - arguments: guitar
-    description: Search for "guitar" in Instructables.com
+    url: https://www.instructables.com/search/?q=<query>&projects=all
+    title: Search Instructables
+    description: Search for a keyword on Instructables
+    include: inst 0
+    examples:
+      - arguments: guitar
+        description: Search for "guitar" in Instructables.com
 
 rdrop 0:
-  url: https://app.raindrop.io/
-  title: Raindrop.io
-  description: Open Raindrop.io
-  tags:
-  - bookmarks
-  - productivity
+    url: https://app.raindrop.io/
+    title: Raindrop.io
+    description: Open Raindrop.io
+    tags:
+      - bookmarks
+      - productivity
 
 rdrop 1:
-  url: https://app.raindrop.io/my/0/<query>
-  title: Search Raindrop.io
-  description: Search for a keyword on Raindrop
-  include: rdrop 0
-  examples:
-  - arguments: something
-    description: Search for "something" on Raindrop.io
+    url: https://app.raindrop.io/my/0/<query>
+    title: Search Raindrop.io
+    description: Search for a keyword on Raindrop
+    include: rdrop 0
+    examples:
+      - arguments: something
+        description: Search for "something" on Raindrop.io
 
 # chg 1:
 #   url: https://pearsonnow.service-now.com/now/nav/ui/classic/params/target/change_request.do%3Fsys_id%3D951d89c197b412105b9cf8771153afb7%26sysparm_record_target%3Dchange_request%26sysparm_record_row%3D1%26sysparm_record_rows%3D1%26sysparm_record_list%3Dnumber%253D<query>%255EORDERBYnumber
@@ -356,44 +356,44 @@ rdrop 1:
 #       description: Search for change ticket "CHG0065184" in Pearson Servicenow
 
 ec2type 1:
-  url: https://instances.vantage.sh/?filter=<query>
-  title: Search AWS Instance types
-  description: Search for a keyword on AWS Instance types
-  tags:
-  - aws
-  - amazon
-  - ec2
-  examples:
-  - arguments: m6a
-    description: Search for "m6a" on AWS Instance types, instances.vantage.sh
+    url: https://instances.vantage.sh/?filter=<query>
+    title: Search AWS Instance types
+    description: Search for a keyword on AWS Instance types
+    tags:
+      - aws
+      - amazon
+      - ec2
+    examples:
+      - arguments: m6a
+        description: Search for "m6a" on AWS Instance types, instances.vantage.sh
 
 jplug 1:
-  url: https://plugins.jenkins.io/ui/search/?sort=relevance&categories=&labels=&view=Tiles&page=1&query=<query>
-  title: Search Jenkins plugins
-  description: Search for a keyword on Jenkins plugins
-  include: jenkins 1
-  examples:
-  - arguments: script-security
-    description: Search for "script-security" on Jenkins plugins
+    url: https://plugins.jenkins.io/ui/search/?sort=relevance&categories=&labels=&view=Tiles&page=1&query=<query>
+    title: Search Jenkins plugins
+    description: Search for a keyword on Jenkins plugins
+    include: jenkins 1
+    examples:
+      - arguments: script-security
+        description: Search for "script-security" on Jenkins plugins
 
 jenkins 1:
-  url: https://<query>-jenkins.pearsondev.com/
-  title: Open a Jenkins controller
-  description: Open a Jenkins controller
-  tags:
-  - jenkins
-  examples:
-  - arguments: name
-    description: Open a Jenkins controller named "name"
+    url: https://<query>-jenkins.pearsondev.com/
+    title: Open a Jenkins controller
+    description: Open a Jenkins controller
+    tags:
+      - jenkins
+    examples:
+      - arguments: name
+        description: Open a Jenkins controller named "name"
 
 jenkins 2:
-  url: https://<param1>-jenkins.pearsondev.com/search/?q=<param2>
-  title: Search a Jenkins controller for a job
-  description: Search for a job name on a Jenkins controller
-  include: jenkins 1
-  examples:
-  - arguments: name,jobname
-    description: Search for "jobname" on a Jenkins controller named "name"
+    url: https://<param1>-jenkins.pearsondev.com/search/?q=<param2>
+    title: Search a Jenkins controller for a job
+    description: Search for a job name on a Jenkins controller
+    include: jenkins 1
+    examples:
+      - arguments: name,jobname
+        description: Search for "jobname" on a Jenkins controller named "name"
 
 # runas
 # tabletopaudio - no searching
@@ -402,93 +402,93 @@ jenkins 2:
 #   url: https://patentscope.wipo.int/search/en/search.jsf#trovu[fill][%23simpleSearchForm\:fpSearch\:input]=<query>&trovu[submit]=%5Bid%5E%3D%22simpleSearchForm%3AfpSearch%3Aj_idt1370%22
 
 snow 1:
-  url: https://pearsonnow.service-now.com/now/nav/ui/home#trovu[fill][aria-labelledby%3D%226wo1za6w8q8v-170-search-information%22]=<query>&trovu[submit]=
+    url: https://pearsonnow.service-now.com/now/nav/ui/home#trovu[fill][aria-labelledby%3D%226wo1za6w8q8v-170-search-information%22]=<query>&trovu[submit]=
 
 qrz 1:
-  url: https://www.qrz.com/db/<query>
-  title: Search QRZ
-  description: Search a callsign on QRZ.com
-  tags:
-  - hamradio
-  examples:
-  - arguments: KC0RJX
-    description: Search for "KC0RJX" on QRZ
+    url: https://www.qrz.com/db/<query>
+    title: Search QRZ
+    description: Search a callsign on QRZ.com
+    tags:
+      - hamradio
+    examples:
+      - arguments: KC0RJX
+        description: Search for "KC0RJX" on QRZ
 
 pill 1:
-  url: https://www.drugs.com/imprints.php?imprint=<query>
-  title: Identify a pill
-  description: Search for a pill identified by drugs.com
-  tags:
-  - health
-  - medical
-  examples:
-  - arguments: I-2
-    description: Search for a pill imprinted with "I-2" on drugs.com
+    url: https://www.drugs.com/imprints.php?imprint=<query>
+    title: Identify a pill
+    description: Search for a pill identified by drugs.com
+    tags:
+      - health
+      - medical
+    examples:
+      - arguments: I-2
+        description: Search for a pill imprinted with "I-2" on drugs.com
 
 nin 1:
-  url: https://www.nintendo.com/us/search/#q=<query>
-  title: Nintendo eShop
-  description: Search for a game on Nintendo's eShop
-  tags:
-  - games
-  examples:
-  - arguments: Mario Kart
-    description: Search for "Mario Kart" on Nintendo's eShop
+    url: https://www.nintendo.com/us/search/#q=<query>
+    title: Nintendo eShop
+    description: Search for a game on Nintendo's eShop
+    tags:
+      - games
+    examples:
+      - arguments: Mario Kart
+        description: Search for "Mario Kart" on Nintendo's eShop
 
 cheat 1:
-  url: https://cheatography.com/explore/search/?q=<query>
-  title: Search Cheatography
-  description: Search for a keyword on Cheatography
-  examples:
-  - arguments: Python
-    description: Search for "Python" on Cheatography
+    url: https://cheatography.com/explore/search/?q=<query>
+    title: Search Cheatography
+    description: Search for a keyword on Cheatography
+    examples:
+      - arguments: Python
+        description: Search for "Python" on Cheatography
 
 cht 1:
-  include: cheat 1
+    include: cheat 1
 
 jj 0:
-  url: https://pearson.grafana.net/d/TYQ--Ei4z/jenkins-service-metrics?orgId=1&viewPanel=panel-18&from=now-30d&to=now&timezone=utc&var-farm=$__all&var-farm_long=$__all
-  title: List all Jenkins jobs
-  description: List all Jenkins jobs on grafana
-  tags:
-  - jenkins
+    url: https://pearson.grafana.net/d/TYQ--Ei4z/jenkins-service-metrics?orgId=1&viewPanel=panel-18&from=now-30d&to=now&timezone=utc&var-farm=$__all&var-farm_long=$__all
+    title: List all Jenkins jobs
+    description: List all Jenkins jobs on grafana
+    tags:
+      - jenkins
 
 usps 1:
-  url: https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=<query>
-  title: US Postal Service tracking
-  description: Track an item in the US Postal Service
-  tags:
-  - shipping
-  examples:
-  - arguments: 123456
-    description: Search for a US Postal Service package with ID 123456
+    url: https://tools.usps.com/go/TrackConfirmAction?qtc_tLabels1=<query>
+    title: US Postal Service tracking
+    description: Track an item in the US Postal Service
+    tags:
+      - shipping
+    examples:
+      - arguments: 123456
+        description: Search for a US Postal Service package with ID 123456
 
 libt 1:
-  url: https://www.librarything.com/search.php?search=<query>
-  title: Search LibraryThing
-  description: Search for a book on LibraryThing
-  tags:
-  - books
-  - library
-  examples:
-  - arguments: The Hobbit
-    description: Search for "The Hobbit" on LibraryThing
+    url: https://www.librarything.com/search.php?search=<query>
+    title: Search LibraryThing
+    description: Search for a book on LibraryThing
+    tags:
+      - books
+      - library
+    examples:
+      - arguments: The Hobbit
+        description: Search for "The Hobbit" on LibraryThing
 
 flathub 1:
-  include:
-    key: fhb 1
-    namespace: o
+    include:
+        key: fhb 1
+        namespace: o
 
 ycl 1:
-  url: https://ebook.yourcloudlibrary.com/library/crlibrary/search?title=<query>
-  title: Search CloudLibrary
-  description: Search for a book in the CloudLibrary
-  tags:
-  - books
-  - library
-  examples:
-  - arguments: The Hobbit
-    description: Search for "The Hobbit" in the CloudLibrary
+    url: https://ebook.yourcloudlibrary.com/library/crlibrary/search?title=<query>
+    title: Search CloudLibrary
+    description: Search for a book in the CloudLibrary
+    tags:
+      - books
+      - library
+    examples:
+      - arguments: The Hobbit
+        description: Search for "The Hobbit" in the CloudLibrary
 
 cloudlib 1:
-  include: ycl 1
+    include: ycl 1
