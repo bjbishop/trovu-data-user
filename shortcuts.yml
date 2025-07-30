@@ -480,3 +480,17 @@ flathub 1:
   include:
     key: fhb 1
     namespace: o
+
+ycl 1:
+  url: https://ebook.yourcloudlibrary.com/library/crlibrary/search?title=<query>
+  title: Search CloudLibrary
+  description: Search for a book in the CloudLibrary
+  tags:
+    - books
+    - library
+  examples:
+    - arguments: The Hobbit
+      description: Search for "The Hobbit" in the CloudLibrary
+
+cloudlib 1:
+  include: ycl 1
