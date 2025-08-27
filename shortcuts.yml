@@ -494,3 +494,13 @@ ycl 1:
 
 cloudlib 1:
   include: ycl 1
+
+aprs 1:
+  url: https://aprs.fi/#!z=11&call=a%2F<query>&timerange=3600&tail=3600
+  title: Search APRS.fi for a callsign
+  description: Search for a callsign on APRS.fi
+  tags:
+    - hamradio
+  examples:
+    - arguments: ABCDE
+      description: Search for "ABCDE" on APRS.fi
