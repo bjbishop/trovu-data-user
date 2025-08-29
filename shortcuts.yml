@@ -504,3 +504,14 @@ aprs 1:
   examples:
     - arguments: ABCDE
       description: Search for "ABCDE" on APRS.fi
+
+mygitlab 1:
+  url: https://gitlab.com/search?group_id=3774636&scope=users&search=<query>
+  title: Search Pearsontechnology GitLab
+  description: Search for a user on Pearsontechnology GitLab
+  tags:
+    - gitlab
+    - work
+  examples:
+    - arguments: John Doe
+      description: Search for "John Doe" on Pearsontechnology GitLab
