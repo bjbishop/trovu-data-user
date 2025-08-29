@@ -515,3 +515,13 @@ mygitlab 1:
   examples:
     - arguments: John Doe
       description: Search for "John Doe" on Pearsontechnology GitLab
+
+giphy 1:
+  url: https://giphy.com/search/<query>
+  title: Search Giphy
+  description: Search for a keyword on Giphy
+  tags:
+    - gif
+  examples:
+    - arguments: kermit the frog
+      description: Search for "kermit the frog" on Giphy
