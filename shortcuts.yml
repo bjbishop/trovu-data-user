@@ -525,3 +525,11 @@ giphy 1:
   examples:
     - arguments: kermit the frog
       description: Search for "kermit the frog" on Giphy
+
+rfc 1:
+  url: https://www.ietf.org/rfc/rfc<query>.txt
+  title: Open an RFC page
+  description: Open a specific RFC page from the www.ietf.org site
+  examples:
+    - arguments: 2119
+      description: Search for RFC number "2119" on www.ietf.org
