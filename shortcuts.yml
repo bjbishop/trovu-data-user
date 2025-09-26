@@ -356,6 +356,15 @@ rdrop 1:
 #     - arguments: CHG0065184
 #       description: Search for change ticket "CHG0065184" in Pearson Servicenow
 
+ec2type 0:
+  url: https://instances.vantage.sh/
+  title: AWS Instance types
+  description: Show all the AWS Instance types
+  tags:
+    - aws
+    - amazon
+    - ec2
+
 ec2type 1:
   url: https://instances.vantage.sh/?filter=<query>
   title: Search AWS Instance types
