@@ -95,50 +95,6 @@ mydocs 0:
   tags:
     - docs
 
-pd 1:
-  url: https://pearsonai.pagerduty.com/search/?searchString=<query>&searchType%5B%5D=incident&sortBy=relevance&team%5B%5D=P0FY9Z3
-  title: Pearson AI PagerDuty
-  description: Search keywords within Pearson AI PagerDuty incidents
-  examples:
-    - arguments: outage
-      description: Search incidents on PagerDuty for "outage"
-  tags:
-    - pagerduty
-
-splunk 0:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22
-  title: Pearson AI Splunk
-  description: Open Pearson AI Splunk
-  tags:
-    - splunk
-
-splunk 1:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20<query>
-  title: Pearson AI Splunk
-  description: Search keywords within Pearson AI Splunk
-  include: splunk 0
-  examples:
-    - arguments: FATAL
-      description: Search Splunk for messages containing "FATAL"
-
-splunk 2:
-  url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param2>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-30m%40m&latest=now
-  title: Controller specific Splunk search
-  description: Search "controller" since 30 minutes ago for "message" in Pearson AI Splunk
-  include: splunk 0
-  examples:
-    - arguments: farnsworth, FATAL
-      description: Search Splunk within the host="farnsworth" since 30 minutes ago for messages containing "FATAL"
-
-# splunk 3:
-#   url: https://pearsonedu.splunkcloud.com/en-US/app/team_releng/search?q=search%20index%3D%22app_releng%22%20host%3D%22jenkins-<param1>%22%20<param3>&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-<param2>%40m&latest=now
-#   title: Controller specific Splunk search with timerange
-#   description: Search "controller" since "timerange" for "message" in Pearson AI Splunk
-#   include: splunk 0
-#   examples:
-#     - arguments: farnsworth, 42m, FATAL
-#       description: Search Splunk within the host="farnsworth" since 42 minutes ago for messages containing "FATAL"
-
 awsec2 0:
   url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
   title: AWS Console EC2
@@ -542,3 +498,19 @@ rfc 1:
   examples:
     - arguments: 2119
       description: Search for RFC number "2119" on www.ietf.org
+
+just 0:
+  url: https://just.systems/man/en
+  title: Just.systems documentation
+  description: Just.systems online documentation
+  tags:
+    - docs
+    - sysadmin
+
+just 1:
+  url: https://just.systems/man/en/?search=<query>
+  title: Search Just.systems documentation
+  description: Search for a keyword on Just.systems documentation
+  examples:
+    - arguments: foo
+      description: Search for "foo" on just.systems documentation
