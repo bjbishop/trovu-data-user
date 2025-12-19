@@ -41,20 +41,6 @@ shpt 1:
 shpt 0:
   include: sharepoint 0
 
-gilligan 1:
-  url: https://gilligan.pearsondev.com/search?search=<query>
-  title: Search Gilligan
-  description: Search gilligan.pearsondev.com our internal gitlab instance
-  examples:
-    - arguments: repository name
-      description: Search for "repository name" on gilligan.pearsondev.com
-  tags:
-    - gilligan
-    - gitlab
-
-gill 1:
-  include: gilligan 1
-
 # snow 1:
 #   url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
 #   title: Search servicenow
@@ -87,13 +73,6 @@ ecr 1:
     - dockerhub
     - amazon
     - ecr
-
-mydocs 0:
-  url: https://gitlab.com/pearsontechnology/IO/pearson-io-releng/troubleshooting-docs/-/blob/main/docs/collapsable_doc_index.md
-  title: Internal documentation
-  description: Our collapsable internal documentation site
-  tags:
-    - docs
 
 awsec2 0:
   url: https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1
@@ -469,17 +448,6 @@ aprs 1:
   examples:
     - arguments: ABCDE
       description: Search for "ABCDE" on APRS.fi
-
-mygitlab 1:
-  url: https://gitlab.com/search?group_id=3774636&scope=users&search=<query>
-  title: Search Pearsontechnology GitLab
-  description: Search for a user on Pearsontechnology GitLab
-  tags:
-    - gitlab
-    - work
-  examples:
-    - arguments: John Doe
-      description: Search for "John Doe" on Pearsontechnology GitLab
 
 giphy 1:
   url: https://giphy.com/search/<query>
