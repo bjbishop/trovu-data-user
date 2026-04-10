@@ -41,16 +41,6 @@ shpt 1:
 shpt 0:
   include: sharepoint 0
 
-# snow 1:
-#   url: https://pearsonnow.service-now.com/esc?id=search&spa=1&q=<query>
-#   title: Search servicenow
-#   description: Search for keywords on Pearson's Servicenow
-#   examples:
-#     - arguments: keyword
-#       description: Search for "keyword" on pearsonnow.service-now.com
-#   tags:
-#     - servicenow
-
 hub 1:
   url: https://hub.pearson.com/search-center?search=<query>
   title: Pearson Hub
@@ -187,6 +177,7 @@ w3w 1:
     - arguments: gates.beyond.broken
       description: Open ///gates.beyond.broken on what3words.com
 
+# This references a global google keep shortcut
 keep 1:
   include: gkp 1
 
@@ -261,7 +252,6 @@ inst 1:
   examples:
     - arguments: guitar
       description: Search for "guitar" in Instructables.com
-
 
 rdrop 0:
   url: https://app.raindrop.io/
@@ -380,7 +370,6 @@ nin 1:
     - arguments: Mario Kart
       description: Search for "Mario Kart" on Nintendo's eShop
 
-
 cheat 1:
   url: https://cheatography.com/explore/search/?q=<query>
   title: Search Cheatography
@@ -424,20 +413,6 @@ flathub 1:
   include:
     key: fhb 1
     namespace: o
-
-ycl 1:
-  url: https://ebook.yourcloudlibrary.com/library/crlibrary/search?title=<query>
-  title: Search CloudLibrary
-  description: Search for a book in the CloudLibrary
-  tags:
-    - books
-    - library
-  examples:
-    - arguments: The Hobbit
-      description: Search for "The Hobbit" in the CloudLibrary
-
-cloudlib 1:
-  include: ycl 1
 
 aprs 1:
   url: https://aprs.fi/#!z=11&call=a%2F<query>&timerange=3600&tail=3600
